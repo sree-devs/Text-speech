@@ -1,0 +1,102 @@
+/* TextToSpeech.css */
+
+.tts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  
+    /* Chessboard background pattern with larger boxes */
+    background-color: #333;
+    background-image:
+      linear-gradient(45deg, #fff 25%, transparent 25%),
+      linear-gradient(-45deg, #fff 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #fff 75%),
+      linear-gradient(-45deg, transparent 75%, #fff 75%);
+    background-size: 100px 100px; /* Increased size of each square */
+    background-position: 0 0, 0 50px, 50px -50px, -50px 0px;
+  }
+  
+  h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* A dark, semi-transparent background */
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif; /* Ensuring the heading uses a bold, clear font */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Adds spacing between letters */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
+  }
+  
+  .tts-input {
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    resize: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* A light background for the input field */
+  }
+  
+  .tts-controls {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .tts-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .speak-btn {
+    background-color: #4caf50;
+  }
+  
+  .speak-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .stop-btn {
+    background-color: #f44336;
+  }
+  
+  .stop-btn:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 600px) {
+    .tts-input {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .tts-btn {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+      padding: 10px;
+    }
+  }
+  
